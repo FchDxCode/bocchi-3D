@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0 20px 20px rgba(154, 83, 146, 0.539), 0 0 50px rgba(186, 67, 67, 0.311);
+}
+
+.Btr {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Btr img {
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.cicle {
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(to right, rgba(245, 70, 66, 50), rgba(118, 195, 231, 75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    transition: all 0.75s ease-out;
+    font-size: 3rem;
+}
+
+.info h3 {
+    font-size: 1.1rem;
+    padding: 1rem 1rem;
+    color: 585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: 585858;
+}
+
+button.active {
+    background: #585858;
+    color: #000;
+}
+
+.seeCharacter {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.seeCharacter button {
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(117, 44, 37, 0.4);
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.sizes button:focus,
+.seeCharacter button:focus {
+    outline: none;
+    opacity: 0.8;
+}
